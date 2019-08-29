@@ -6,7 +6,6 @@
 body {
   font-family: 'Merriweather', serif;
   margin: auto;
-
 }
 
 form {
@@ -18,19 +17,6 @@ form {
 
 fieldset {
   border: none;
-
-}
-
-
-.signup {
-  border-bottom: thick double;
-  text-align: center;
-}
-
-.info {
-  color: grey;
-  margin: 20px;
-
 }
 
 header {
@@ -40,7 +26,6 @@ header {
   text-align: center;
   text-transform: uppercase;
   border: none;
-
 }
 
 h4 {
@@ -48,18 +33,14 @@ h4 {
 }
 
 input:focus {
-outline-color: #ff8080;
-
-
+  outline-color: #ff8080;
 }
-
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea,
 select {
-
   border: none;
   border-radius: 8px;
   font-size: 1em;
@@ -71,18 +52,26 @@ select {
   margin-bottom: 30px;
 }
 
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 2px #ff8080;
+}
+
+input[type="radio"]:checked {
+  box-shadow: 0 0 0 2px #ff8080;
+}
+
 input {
   margin: 10px;
 }
-
-
-
 
 legend {
   text-align: left;
   font-size: 22px;
   padding: 10px 20px 20px 0;
+}
 
+label {
+  color: grey;
 }
 
 button {
@@ -98,26 +87,38 @@ button {
   border: 1px solid #53bab3;
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
-
   margin-bottom: 10px;
 }
+
 textarea:focus {
   outline-color: #ff8080;
 }
 
 select:focus {
-outline-color: #ff8080;
+  outline-color: #ff8080;
 }
 
-.topic {
-  color: grey;
-
-
-
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
 .signup {
-  border-bottom: double black 5px;
+  text-align: center;
+}
+
+.info {
+  color: grey;
+}
+
+.thick {
+  border: solid 2px;
+  width: 90%;
+}
+
+.thin {
+  border: solid 1px;
+  width: 90%;
 }
 
 .zipcode {
@@ -131,15 +132,15 @@ outline-color: #ff8080;
 #zip {
   width: 50%;
 }
-#state-select {
-height: 70px;
-color: grey;
 
+#state-select {
+  height: 70px;
+  color: grey;
 }
+
 /* Media Queries */
 @media (min-width: 768px) {
-.container {
-  display: flex;
-}
-
+  .container {
+    display: flex;
+  }
 }
