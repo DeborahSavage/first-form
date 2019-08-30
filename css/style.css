@@ -94,23 +94,30 @@ button {
   margin-bottom: 10px;
 }
 
-
 textarea:focus {
   outline-color: #ff8080;
+  width: 400px;
 }
 
 select:focus {
   outline-color: #ff8080;
+  width: 400px;
 }
-
 
 textarea {
   margin-top: 15px;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
+select, textarea {
+  transition: width 2s;
+}
+
+.text {
+  transition: width 2s;
+}
+
+.text:focus {
+  width: 400px;
 }
 
 .signup {
@@ -120,15 +127,11 @@ textarea {
 .info {
   color: grey;
   margin: 30px 0 40px 0;
-
-
 }
 
 .thick {
-
   border: solid 2px;
   width: 90%;
-
 }
 
 .thin {
@@ -146,6 +149,10 @@ textarea {
 
 #zip {
   width: 50%;
+}
+
+#zip:focus {
+  width: 400px;
 }
 
 #state-select {
@@ -171,9 +178,8 @@ textarea {
     height: 50px;
     margin: auto 0;
   }
-}
 
-#zip {
-  max-width: 25%;
-}
+  #zip {
+    max-width: 25%;
+  }
 }

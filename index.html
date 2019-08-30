@@ -12,8 +12,6 @@
 <body>
 
   <div>
-
-
     <header>
       <h2>The Code Review</h2>
     </header>
@@ -25,33 +23,33 @@
       <hr class="thin">
     </div>
 
-    <form action="" method="post">
+    <form action="/my-handling-form-page" method="post">
       <fieldset class="one">
         <legend>Contact Information</legend>
 
         <div>
           <label for="name">Full Name</label>
-          <input required type="text" id="name" name="full_name" placeholder="Required">
+          <input class="text" required type="text" id="name" name="full_name" placeholder="Required">
         </div>
 
         <div>
           <label for="mail">Email Address</label>
-          <input required type="email" id="mail" name="user_mail" placeholder="Required">
+          <input class="text" required type="email" id="mail" name="user_mail" placeholder="Required">
         </div>
 
         <div>
           <label for="phone">Phone Number</label>
-          <input required type="tel" id="phone" name="user_number" placeholder="Required">
+          <input class="text" required type="tel" id="phone" name="user_number" placeholder="Required">
         </div>
 
         <div>
           <label for="street">Street Address</label>
-          <input type="text" id="street" name="user_address">
+          <input class="text" required type="text" id="street" name="user_address" placeholder="Required">
         </div>
 
         <div>
           <label for="city">City</label>
-          <input type="text" id="city" name="user_city">
+          <input class="text" required type="text" id="city" name="user_city" placeholder="Required">
         </div>
 
         <div>
@@ -70,7 +68,7 @@
 
         <div class="zipcode">
           <label for="zip">Zip Code</label><br>
-          <input type="text" id="zip" name="user_zip">
+          <input class="text" type="text" id="zip" name="user_zip">
         </div>
       </fieldset>
 
@@ -85,13 +83,13 @@
         </div>
 
         <div>
-          <input type="checkbox" id="checkbox" name="news" value="css_news">
-          <label for="checkbox">CSS News</label>
+          <input type="checkbox" id="checkbox1" name="news" value="css_news">
+          <label for="checkbox1">CSS News</label>
         </div>
 
         <div>
-          <input type="checkbox" id="checkbox" name="news" value="java_news">
-          <label for="checkbox">Javascript News</label>
+          <input type="checkbox" id="checkbox2" name="news" value="java_news">
+          <label for="checkbox2">Javascript News</label>
         </div>
 
         <p class="info">Newsletter format</p>
@@ -102,8 +100,8 @@
 
         </div>
         <div>
-          <input type="radio" id="radio" name="radio" value="plain_text">
-          <label for="radio">Plain text</label>
+          <input type="radio" id="radio1" name="radio" value="plain_text">
+          <label for="radio1">Plain text</label>
 
         </div>
       </fieldset>
