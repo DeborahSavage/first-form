@@ -37,7 +37,7 @@ h4 {
 }
 
 input:focus {
-  outline-color: #ff8080;
+  box-shadow: 0px 0px 0px 7px #ff8080;
 }
 
 input[type="text"],
@@ -46,7 +46,6 @@ input[type="tel"],
 textarea,
 select {
   border: none;
-  border-radius: 8px;
   font-size: 1em;
   height: auto;
   margin: 10px 0 0 0;
@@ -95,29 +94,34 @@ button {
 }
 
 textarea:focus {
-  outline-color: #ff8080;
-  width: 400px;
+  box-shadow: 0px 0px 0px 7px #ff8080;
 }
 
 select:focus {
-  outline-color: #ff8080;
-  width: 400px;
+  box-shadow: 0px 0px 0px 7px #ff8080;
 }
 
 textarea {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 select, textarea {
-  transition: width 2s;
+  box-shadow: 0px 0px 0px 3px #ff8080;
+  transition: box-shadow 0.6s linear;
+  margin: 0.5em;
+  border-radius: .3em;
+  margin-left: -3px;
 }
 
 .text {
-  transition: width 2s;
+  box-shadow: 0px 0px 0px 3px #ff8080;
+  transition: box-shadow 0.6s linear;
+  margin: 0.5em;
+  border-radius: .3em;
 }
 
 .text:focus {
-  width: 400px;
+  box-shadow: 0px 0px 0px 7px #ff8080;
 }
 
 .signup {
@@ -126,7 +130,7 @@ select, textarea {
 
 .info {
   color: grey;
-  margin: 30px 0 40px 0;
+  margin: 20px 0 20px 0;
 }
 
 .thick {
@@ -141,6 +145,7 @@ select, textarea {
 
 .zipcode {
   border-bottom: solid 3px;
+  margin-top: 15px;
 }
 
 ::placeholder {
@@ -152,7 +157,7 @@ select, textarea {
 }
 
 #zip:focus {
-  width: 400px;
+  box-shadow: 0px 0px 0px 7px #ff8080;
 }
 
 #state-select {
@@ -170,7 +175,7 @@ select, textarea {
   .one div select {
     flex-grow: 1;
     flex-basis: 65%;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .one div label {
