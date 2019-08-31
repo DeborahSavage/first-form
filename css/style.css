@@ -155,9 +155,16 @@ select, textarea {
   text-align: right;
 }
 
+.other-topic {
+  display: block;
+  margin: 20px 0;
+}
+
+
 #zip {
   width: 50%;
 }
+
 
 #zip:focus {
   box-shadow: 0px 0px 0px 7px #ff8080;
