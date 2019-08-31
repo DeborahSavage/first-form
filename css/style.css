@@ -48,7 +48,6 @@ select {
   border: none;
   font-size: 1em;
   height: auto;
-  margin: 10px 0 0 0;
   padding: 25px;
   width: 100%;
   background-color: #e8eeef;
@@ -75,10 +74,17 @@ legend {
 
 label {
   color: grey;
+
+}
+.btn {
+padding: 0 12px;
+
 }
 
-button {
-  padding: 15px 40px 20px 40px;
+input[name="button"] {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 15px 0;
   color: #FFF;
   background-color: #53bab3;
   font-size: 18px;
@@ -88,7 +94,7 @@ button {
   border-radius: 5px;
   width: 100%;
   border: 1px solid #53bab3;
-  border-width: 1px 1px 3px;
+  /* border-width: 1px 1px 3px; */
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
   margin-bottom: 10px;
 }
@@ -101,16 +107,13 @@ select:focus {
   box-shadow: 0px 0px 0px 7px #ff8080;
 }
 
-textarea {
-  margin-top: 10px;
-}
 
 select, textarea {
   box-shadow: 0px 0px 0px 3px #ff8080;
   transition: box-shadow 0.6s linear;
   margin: 0.5em;
   border-radius: .3em;
-  margin-left: -3px;
+
 }
 
 .text {
@@ -164,6 +167,7 @@ select, textarea {
   height: 70px;
   color: grey;
 }
+
 
 /* Media Queries */
 @media (min-width: 768px) {
